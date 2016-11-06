@@ -4,11 +4,15 @@
 }
 
 #top-track {
-  background-color: rgb(250,250,210);
+  background-color: rgb(80,80,80);
+  border-bottom: 5px dashed yellow;
+  border-right: 10px dashed white;
 }
 
 #bottom-track {
-  background-color: rgb(200,200,250);
+  background-color: rgb(80,80,80);
+  border-top: 5px dashed yellow;
+  border-right: 10px dashed white;
 }
 
 #first-grid {
@@ -21,6 +25,7 @@
     width: 90px;
     height: 90px;
     margin: 5px;
+    
   }
 
 .block1 {
