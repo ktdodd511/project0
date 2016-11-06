@@ -1,0 +1,33 @@
+.track {
+  border: 5px solid black;
+  height: 200px;
+}
+
+#top-track {
+  background-color: rgb(250,250,210);
+}
+
+#bottom-track {
+  background-color: rgb(200,200,250);
+}
+
+#first-grid {
+  background-color: black;
+}
+
+.block1, .block2 {
+    position: absolute;   
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+
+.block1 {
+  background-color: rgb(255,201,56);
+
+}
+
+.block2 {
+  background-color: rgb(56,201,255);
+}
