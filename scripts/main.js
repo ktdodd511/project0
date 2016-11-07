@@ -49,14 +49,14 @@ $(document).ready(function() {
 }
 
   function winner() {
-    if (mCount >= 90) {
+    if (mCount >= 70) {
       alert(player1 + " " + "has won!");
       location.reload();
 
-    } else if (wCount >= 90) {
+    } else if (wCount >= 70) {
       alert(player2 + " " + "has won!");
       location.reload();
-    } else if (mCount === 90 && wCount === 90) {
+    } else if (mCount === 70 && wCount === 70) {
       alert("It's a tie!");
       location.reload();
     }
