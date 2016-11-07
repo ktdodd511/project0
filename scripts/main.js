@@ -12,8 +12,8 @@ $(document).ready(function() {
 
   function readyToPlay() {
     
-    player1 = prompt("Enter player one's name!");
-    player2 = prompt("Enter player two's name!");
+    player1 = prompt("Enter a name for Player One!");
+    player2 = prompt("Enter a name for Player Two!");
     startRace = prompt("ARE YOU BOTH READY?");
 
     if (startRace.toLowerCase() === 'y' || startRace.toLowerCase() === 'yes') {
@@ -32,13 +32,13 @@ $(document).ready(function() {
         switch (event.keyCode) {
             
             case 77: 
-              $( ".block1" ).animate({ "left": "+=20px" }, "fast" );  
+              $( ".block1" ).animate({ "left": "+=30px" }, "fast" );  
               mCount+=1;
               winner();  
               break;
 
             case 87:
-              $( ".block2" ).animate({ "left": "+=20px" }, "fast" );
+              $( ".block2" ).animate({ "left": "+=30px" }, "fast" );
               wCount+=1;
               winner();
               break;
@@ -49,14 +49,14 @@ $(document).ready(function() {
 }
 
   function winner() {
-    if (mCount >= 70) {
+    if (mCount >= 50) {
       alert(player1 + " " + "has won!");
       location.reload();
 
-    } else if (wCount >= 70) {
+    } else if (wCount >= 55) {
       alert(player2 + " " + "has won!");
       location.reload();
-    } else if (mCount === 70 && wCount === 70) {
+    } else if (mCount === 50 && wCount === 50) {
       alert("It's a tie!");
       location.reload();
     }
